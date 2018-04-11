@@ -1,0 +1,26 @@
+.square {
+    background: #fdb913;
+    height: 200px;
+}
+
+.square1 {
+    background:#006A44;
+    height: 200px;
+}
+
+.square2 {
+    background: #c1272d;
+    height: 200px;
+}
+
+.boldText, .p1{
+    font-weight: bold;
+    font-size: 40px; 
+    margin: 0px;
+}
+
+.Vytis{
+    width: 100%;
+    margin: auto;
+    display: block;
+}

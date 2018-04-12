@@ -1,0 +1,36 @@
+#news {
+    min-height: 200px;
+    background: green;
+   
+}
+
+#general {
+    min-height: 200px;
+    align-content: center;
+    background: whitesmoke;
+}
+
+#tv {
+    min-height: 200px;
+    background: yellow;
+}
+
+#background {
+    background: url(../img/vanduo.png) 0 center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    }
+
+#mygtukas {
+    min-height: 50px;
+    background: grey;
+    }
+
+#lentele {
+    min-height: 200px;
+    background:whitesmoke;
+}
+
+/* pazymim teksta ctrl+a, tuomet darome shift+alt+F _ taip suformatuojame html teksto isdeliojima */
+/* bootstrap leidzia gerokai patrumpinti tam tikru html funkciju (kaip mygtukas ir pan) naudojima. tai tuomet kiekvienam projektui tiesiog nukopinam tas idetas nuorodas. bootstrap nereikia, kai nori kazka kurti savito*/
+/* cia jei naudojamos bootsrapine lentele - https://getbootstrap.com/docs/4.0/content/tables/ */

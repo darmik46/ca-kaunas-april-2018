@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formu ikelimas</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+   input:focus {
+    background-color: yellow;
+}
+    </style>
+
+</head>
+<body>
+    <div class="container">
+
+        <h3> Anketa</h3>
+       
+        <form>
+
+            <div class="form-line">
+                <label for="firstname" class="lbl">Vardas:</label>
+                <input type="text" name="firstname" id="firstname" class="txt-field" placeholder="Įrašyk savo vardą">
+                <label for="lastname" class="lbl">Pavardė:</label>
+                <input type="text" name="lastname" class="txt-field" placeholder="Įrašyk savo pavardę">
+                <label for="password" class="lbl">Slaptažodis</label>
+                <input type="password" id="passwvord" value="password" class="txt-field" placeholder="Įrašyk slaptažodį">
+            </div>    
+
+
+            <div class="form-line">
+                <input type="radio" id="r1" name="gender" value="vyras"><label for="r1">Vyras</label>
+                <input type="radio" id="r2" name="gender" value="moteris"><label for="r2">Moteris</label>
+            </div>
+
+            <div class="form-line">
+                <input type="checkbox" id="d1" name="weekday" value="Monday">
+                <label for="Monday">Monday</label>
+                <input type="checkbox" id="d2" name="weekday" value="Tuesday">
+                <label for="Monday">Tuesday</label>
+                <input type="checkbox" id="d3" name="weekday" value="Wednesday">
+                <label for="Monday">Wednesday</label>
+            </div>
+
+            <div class="form-line">
+                <label><input type="checkbox"> Prisiminti duomenis?</label>
+            </div>
+
+            <div class="form-line">
+                <textarea name="message" id="message">
+                    Tai bandymas kurti anketinio tipo bloka su ivairaus pobūdžio intarpais ir skirtingu jų valdymu. <br>
+                    Tai bandymas kurti anketinio tipo bloka su ivairaus pobūdžio intarpais ir skirtingu jų valdymu. <br>
+                    Tai bandymas kurti anketinio tipo bloka su ivairaus pobūdžio intarpais ir skirtingu jų valdymu. <br>
+                    Tai bandymas kurti anketinio tipo bloka su ivairaus pobūdžio intarpais ir skirtingu jų valdymu. <br>
+                </textarea>
+            </div>
+
+            <div class="form-line">
+            <label for="city" class="lbl">Miestas:</label>
+                <input type="text" name="city" class="txt-field">
+            <label for="age" class="lbl">Amžius:</label>
+                <input type="text" name="age" class="txt-field">
+            <label for="country" class="lbl">Šalis</label>
+            </div>
+
+            <div class="form-line">
+            <select class="select-field" id="country" name="country">
+                <option value="LT">Lietuva</option>
+                <option value="USA">JAV</option>
+                <option value="LV">Latvija</option>
+                <option value="EE">Estija</option>
+                <option value="RU">Rusija</option>
+                <option value="DK">Vokietija</option>
+                <option value="PL">Lenkija</option>
+            </select>
+            </div>
+
+            <div class="form-line">
+                <button type="submit" class="button">
+                    <i class="fas fa-plane"></i>Siųsti
+                </button>
+        </div>
+
+        <div>
+                <form action="/action_page.php">
+                  Search Google:
+                  <input type="search" name="googlesearch">
+                  <input type="submit">
+                </form>
+        </div>
+        </form>
+    </div>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+</body>
+</html>

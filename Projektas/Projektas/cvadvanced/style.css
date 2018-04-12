@@ -1,0 +1,114 @@
+body{
+    background-color:#DCDCDC;
+}
+
+.center {
+    margin: auto;
+}
+
+#block1 {
+    min-height: 295px;
+    width: 1000px;
+    margin: auto;
+    background: white;
+}
+
+.flex {
+    display: flex;
+}
+
+.photo {
+    width: 200px;
+    margin: 50px auto auto 200px;
+    position: relative;
+    border-radius: 50%;   
+}
+
+#block2 {
+    min-height: 150px;
+    width: 1000px;
+    margin: auto;
+    background: white;
+}
+
+#block3 {
+    min-height: 500px;
+    width: 1000px;
+    background: white;
+    margin: 0px auto;
+}
+
+#block4 {
+    height: 500px;
+    width: 1000px;
+    margin: 50px auto auto auto;
+    background: white;
+}
+
+.article1 {
+    min-width: 500px;
+    min-height: 50px;
+    margin: 50px auto auto 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.article2 {
+    min-width: 500px;
+    min-height: 100px;
+}
+
+.article3 {
+    width: 870px;
+    min-height: 100px;
+    margin: auto 50px auto 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border-style: dotted;
+    text-align: justify;
+    padding: 15px 15px 15px 15px;
+    display: block;
+}
+
+.article4 {
+    min-width: 800px;
+    min-height: 100px;
+    margin:0px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: left;
+    display: block;
+}
+
+.text {
+    text-align: left;   
+    font: 20px;
+    margin: auto 15px auto 15px;
+}
+
+.text-pomegiai {
+    text-align: left;   
+    font: 12px;
+    margin: 15px;  
+}
+
+.textBold {
+    text-align: left;   
+    margin: 50px auto auto 50px;
+    font-weight: bold;
+}
+
+.txt {
+    color: red;
+    font-style: 1em;
+    border: 1px solid green;
+}
+
+
+.table, .table td{
+    width: 850px;
+    margin: 30px 30px 50px 30px; 
+    border-color: gray;
+    border-bottom: 1px solid;
+    text-align: center;
+    font-size: 15px;
+}

@@ -1,0 +1,20 @@
+body {
+    background: url(../img/fonas.png);
+}
+
+.content {
+background:lightpink;
+min-height: 150px;
+padding: 20px;
+text-align: center;
+}
+
+.conteiner {
+    padding: 0 15px 0 0;
+}
+
+#main {
+    padding-top: 100px;
+    padding: top;
+    position: relative;
+}

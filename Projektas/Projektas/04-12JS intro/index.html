@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+
+    <title>JS Intr</title>
+
+    <script>
+
+        function test() {
+            let x = document.getElementById("price").value; //nuskaitom laukeli
+            let y = Number(x); //y=paverciam x i number
+            console.log = (typeof x); //patikrinam laukeli "duomenu tipas"
+
+            y = y + 100; //pridedam 100 prie turimo skaiciaus 
+            console.log (y);
+
+            document.getElementById("result").innerText = y;
+        }
+
+    </script>
+</head>
+
+<body>
+    <input type="number" class="price" name="price" id="price" />
+    <!-- jei mygtuko nerisam su serveriu, naudojam button.
+        jei risam su serveriu arba po juo dedam linka koki, naudojam submit. -->
+
+    <button type="button" id="test" onclick="test()">Bandymui</button>
+    <div id="result"></div>
+</body>
+
+</html>

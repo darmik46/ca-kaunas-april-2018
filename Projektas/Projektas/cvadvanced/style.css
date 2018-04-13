@@ -103,6 +103,11 @@ body{
     border: 1px solid green;
 }
 
+.textForm {
+    text-align: center;
+    margin-top: 15px;
+}
+
 
 .table, .table td{
     width: 850px;

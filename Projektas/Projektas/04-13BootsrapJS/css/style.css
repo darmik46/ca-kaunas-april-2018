@@ -1,0 +1,52 @@
+
+body{
+    background:url("../img/fonas.png");
+}
+
+#word_compare{
+    background: whitesmoke;
+    padding: 15px;
+    border: 1px solid grey;
+}
+
+#row {
+    padding-top: 100px;
+    padding: top;
+    position: relative;
+}
+.container {
+    margin-top: 50px;
+    width: 960px;
+    background: rosybrown;
+    min-height: 150px;
+    padding: 5px;
+}
+
+/* .content { */
+    /* background:lightpink; */
+    /* min-height: 150px; */
+    /* padding: 20px; */
+    /* text-align: center;
+    } */
+
+.color{
+background: gray;
+}
+
+.centered-content{
+    text-align: center;
+} 
+
+/* .justify-content { */
+    /* text-align: justify; */
+/* } */
+
+.for_button {
+float: right;
+margin: 10px;
+}
+
+.for_checkbox{
+    float: left;
+    margin-left: 15px;
+}

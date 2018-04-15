@@ -1,0 +1,45 @@
+ body {
+     display: block;
+     display: block;
+ }
+
+ #conteiner {
+    padding-top: 10px;
+    position: relative;
+ }
+.header {
+    background: black;
+    min-height: 100px;
+}
+
+
+.main {
+    background: url(../img/fonas.png) 0 center;
+    min-height: 250px;
+}
+
+.welcom {
+    
+    font-size: 25px;
+    font-family: Lucida Calligraphy, sans-serif;
+    color: white;
+    margin-top: 50px;
+}
+
+.footer {
+    background: azure;
+    min-height: 100px;
+
+}
+
+.photo {
+    height: 80px;
+    position: right;
+    margin: 10px;
+}
+
+.btn-group {
+    padding: 10%;
+    width: 400px;
+    margin:auto 20px auto 150px; 
+}

@@ -36,5 +36,3 @@ function printCities(cities){ //funkcijai reikalingas masyvas "cities"//
    }
    document.getElementById("result").innerHTML = h;
    }
-
-  

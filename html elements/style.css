@@ -1,0 +1,55 @@
+body{
+    background-image: url("fonas.png");
+}
+
+p{
+    background-color: mistyrose;
+}
+
+.greenText {
+    color: #C328A7;
+}
+
+.orangeText {
+    color:orangered;
+}
+
+.redText {
+    color:#B40404;
+}
+
+.firstParagraph{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.secondParagraph{
+    font-size: 31px;
+    font-weight: bold;
+}
+
+.thirdParagraph{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Cia yra CSS komentaras */ 
+.photo{
+    width: 200px;
+    /* height: 150px */
+}
+
+.boldText{
+    font-weight: bold;
+    font-size: 40px;
+    color: red;
+}
+
+.table, .table td{
+    border:4px solid blue; 
+    font-size: 40px;
+    font-weight: bold;
+    border-collapse: collapse;
+    border-style: double;
+    background-color: #CCE1E2;
+    }

@@ -3,19 +3,20 @@
      display: block;
  }
 
- #conteiner {
+ .conteiner {
     padding-top: 10px;
     position: relative;
  }
+
 .header {
     background: black;
     min-height: 100px;
 }
 
 
-.main {
+#main {
     background: url(../img/fonas.png) 0 center;
-    min-height: 250px;
+    min-height: 350px;
 }
 
 .welcom {
@@ -28,7 +29,7 @@
 
 .footer {
     background: azure;
-    min-height: 100px;
+    min-height: 200px;
 
 }
 

@@ -1,0 +1,16 @@
+body{
+    background-color: #F5F5DC;
+}
+
+.firstParagraph {
+    font-size: 25px;
+    font-weight: bold;
+}
+    
+.secondParagraph {
+    font-size: 18px;
+}
+
+.photo{
+    width: 400px;
+}

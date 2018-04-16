@@ -1,0 +1,64 @@
+body{
+    background: auto;
+    font: 12px verdana;
+
+}
+
+#general {
+    min-height: 500px;
+    width: 1200px;
+    background: whitesmoke;
+}
+
+    /* jei flex ivesttas i viena klase, negali jis dubliuotis kkitoje tame ppat elemente esancioje klaseje. tik atskiruose uudaruose elementuose. flex atriboja konkrecius elementus, neiskraipant jiems uzduotu dydziu */ 
+.flex {
+    display: flex;
+}
+
+.article {
+    border-top: 5px solid blue;
+    width: 260px;
+    min-height: 400px;
+    margin: 20px;
+    padding: 0 20px;
+    background-color: greenyellow;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+/* padaro letai besikeiciancia spalva. svarbu yra uzsymejimas klases!*/
+.article:hover {
+    border-color: dodgerblue;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.text {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.textMini {
+    text-align: justify;   
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font: 0.5em;
+}
+
+.text-box {
+    width: 100%;
+    margin: 20px 0 0 0;
+    font-family: verdana;
+    background: darkgrey;
+    min-height: 300px;
+}
+
+/* cia apibreziama su flout ir galimybe delioti teksta nepriklausomai nuo foto padeties */
+.photo {
+    width: 45%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    float: left;
+}
+

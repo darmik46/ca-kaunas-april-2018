@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Full</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        function sum() {
+            let a_word = document.getElementById("a").value;
+            let b_word = document.getElementById("b").value;
+
+            console.log(a_word);
+            console.log(b_word);
+
+            // ypatingai svarbu, kad uzduodamos kintamuju reiksmes visose funkcijose butu lygiai tokios pacios!
+            // nes bent maziausia klaida gali nulemti visos sistemos klaida
+            if (a_word != b_word) {
+                document.getElementById("Wordrez").innerText = "teisybe";
+            } else {
+                document.getElementById("Wordrez").innerText = "klaida";
+            }
+
+        }
+
+        function login(params) {
+            let user
+            
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="color" id="word_compare">
+
+                    <div class="form-group">
+                        <label for="text1">Tekstas1</label>
+                        <input type="text" name="a" id="a" placeholder="word1" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="text2">Tekstas2</label>
+                        <input type="text" name="b" id="b" placeholder="word2" class="form-control">
+                    </div>
+
+                    <span class="hidden"></span>
+
+                    <div class="centered-content">
+                        <div class="form-group">
+                            <button type="button" class="btn btn-success" id="sum" onclick="sum()">Lyginti</button>
+                            <div>
+                                <h1 id="Wordrez"></h1>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="color" id="word_compare">
+
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+
+                        <div>
+                            <a class="nav-link active" href="https://www.delfi.lt/">
+                                <u>Pamiršai slaptazodi?</u>
+                            </a>
+                        </div>
+
+                        <div class="for_checkbox">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Patikrinti</label>
+                        </div>
+                        <div class="for_button">
+                            <button type="button" class="btn btn-primary btn-sm" itemid="btn_login" onclick="login">Siusti</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

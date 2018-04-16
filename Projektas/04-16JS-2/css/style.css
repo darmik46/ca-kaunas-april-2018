@@ -1,0 +1,16 @@
+.productlist {
+    border: 1px solid gray;
+    padding: 5px;
+    text-align: left;
+    color: blue;
+}
+
+.container {
+    margin: 50px auto auto auto;
+    border: aqua 2px;
+}
+
+.row {
+    border-style: solid;
+    margin: 10px auto 10px auto;
+}

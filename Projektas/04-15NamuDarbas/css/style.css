@@ -3,13 +3,8 @@
      display: block;
  }
 
- .conteiner {
-    padding-top: 10px;
-    position: relative;
- }
-
 .header {
-    background: black;
+    background: gray;
     min-height: 100px;
 }
 
@@ -19,12 +14,15 @@
     min-height: 350px;
 }
 
-.welcom {
-    
-    font-size: 25px;
-    font-family: Lucida Calligraphy, sans-serif;
-    color: white;
-    margin-top: 50px;
+.gray {
+    background: gray;
+   height: 100px;
+}
+
+.row {
+background-color: dimgray;
+    margin-top: 10px;
+display: block;
 }
 
 .footer {
@@ -35,12 +33,19 @@
 
 .photo {
     height: 80px;
-    position: right;
+    position: left;
     margin: 10px;
 }
 
 .btn-group {
-    padding: 10%;
-    width: 400px;
-    margin:auto 20px auto 150px; 
+    margin:10px; 
+    position: right;
 }
+
+.content {
+    background: gray;
+    height: 150px;
+    text-align: justify;
+    min-width: 960px;
+    position: justify;
+    }

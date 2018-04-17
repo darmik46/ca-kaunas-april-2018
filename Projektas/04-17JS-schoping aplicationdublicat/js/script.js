@@ -112,3 +112,4 @@ function clearDuplicates(colors){
 // }
 
 // toString padaro mums norima objekta i sarasini - zodzius su kableliu ir pan
+

@@ -5,42 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>JS naujas</title>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-    <section id="top">
-        <div class="container">
-            <div id="app">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="row">
-                            <div class="col-3">
-                                <label for="prod">Produktas</label>
-                            </div>
-                            <div class="col-9">
-                                <input type="text" name="prod" id="prod" class="form-control">
-                            </div>
-                        </div>
-                        
-                        <div class="tarpelis"></div>
 
-                        <button class="btn btn-primary" type="submit" onclick="add()" placeholder="prod">Prideti produkta</button>
-                    </div>
-                    <div class="col-6">
-                        <div id="result">
-                        </div>
-                    </div>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <input type="text" class="form-control" id="brand" name="brand" placeholder="Marke"/>
+                <input type="text" class="form-control" id="model" name="model" placeholder="Modelis"/>
+                <input type="text" class="form-control" id="engine" name="engine" placeholder="Variklis"/>
+                <input type="text" class="form-control" id="hp" name="hp" placeholder="AJ"/>
+                <button id="register" onclick="reg()" class="btn btn-primary" type="button">Registruoti</button>
             </div>
 
+ <!-- <div class="col-6">
+        <h2>Irasyti auto</h2>
+        <form action="reg()">
+                <input name="CARS" type="text" onclick="reg()">
+                  </form>
+        
+                    </div>
 
         </div>
-    </section>
-
+    </div> -->
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -49,7 +44,8 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+
+    <script src="js/cars.js"></script>
 </body>
 
 </html>

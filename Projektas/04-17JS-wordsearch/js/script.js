@@ -1,21 +1,40 @@
+//  cia svarbus tinklapis!!!!!! http://www.3ligijus.lt/javascript.html
 
+
+// 1. apsirasome sarasa, kuris buys susietas su masyvu 9value0
 let miestai = ["New york", "Berlin", "Oslo", "Riga", "Moscow", "Rome", ""];
 
+// 2. sita funkcija mums reikalinga tik pracekinimui, kai atverciamas tinklapis
 function check() {
     alert("klikas veikia");
+
+    // 3. kai yra kokie nors tekstiniai paieskos laukeliai, rasomas value! cia city bus tas id, kuris pas mus duodamas html tekste. ju gali buti ne vienas!
     let city = document.getElementById("city").value;
+
+    // 4. reikalinga tik tikrinimui per inspecta!!!!!!!!!!!
     console.log(city);
 
+// 5. cia sukuriame tarpini elemnta paieskai, be apibrezto teksto!
     let cityFound = "";
-    if (miestai.indexOf(city) > - 1) {  
+// 6. cia musu lygtis, kuria mes apibreziame, ko mums is tikro reikia
+    if (miestai.indexOf(city) > - 1) {
         cityFound = "toks miestas yra";
-    }else{
+    } else {
         cityFound = "tokio miesto nera";
     }
-    
-    document.getElementById("result").innerHTML = "<h3>"+cityFound+"</h3>";
+
+// 7.sitas uzrasas mums nurodo, ko mes siekiam uzduoto per html teksta (siuo atveju result, kuri mums turi duoti BUTTON, ir nurodo ( su h3), kurioje vietoje musu rezultatas pasirasomas!!!!!)
+    document.getElementById("result").innerHTML = "<h3>" + cityFound + "</h3>";
 }
 
+
+
+// // //pop
+// // //splice()
+// // //split()
+// // //slice()
+// // //indexOf()
+// // //toString()
 
 
 
@@ -27,8 +46,27 @@ function check() {
 //     console.log("miestas nerastas");
 // }
 // }
-// // function check(){
-// //     alert("Implement here");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// NEDUBLIUOTI tokiu paciu funkciju!!!!!
+
+// function check(){
+//     alert("Implement here");
 // }
 
 

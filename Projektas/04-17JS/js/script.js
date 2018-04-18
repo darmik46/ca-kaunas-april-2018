@@ -1,51 +1,62 @@
-let product_array = [];
+let prod_array = [];
 
-function sub() {
-    //nuskaityti reiksme nuo laukelio
-    let newProduct = document.getElementById("prod").value;
+function add() {
 
-
-    //patikrinti ar elementas egzistuoja. Cia yra ivadas i patikrinimo funkcija!
-    let rasta_dublikatu = false; // boolean
-
-    // cia "rasta_dublikat" yra uzduotis funkcijai, o funkcija - "checkForDuplicates(newProduct, product_array)"
-    // dar svarbi esme - tarp kai kuriu elementu (funkciniu) ir to kas yra skliaustuose NEGALI BUTI TARPELIO (kaip checkForDuplicates(newProduct, product_array))
-    rasta_dublikatu = checkForDuplicates(newProduct, product_array);
-
-    // issaugoti reiksme i masyva, ji parodo tikrinant, ar jau yra toks produktas. tokia funkcija TIKRINA esama padeti!
-    if (rasta_dublikatu == false) {
-        product_array.push(newProduct)
-    } else {
-        alert("DUBLIKATAS");
-    }
+    
+    let newProd = document.getElementById("prod").value;
 
 
-    // atvaizduoti masyva
-    printProducts(product_array);
+    
+    prod_array.push(newProd);
+
+    printProd(prod_array);
 }
-function printProducts(product_array) {
+
+function printProd(prod_array) {
     let h = "";
     h = h + "<ul>";
-    for (let i = 0; i < product_array.length; i++) {
-        h = h + "<li>" + product_array[i] + "</li>";
+    for (let i = 0; i < prod_array.length; i++) {
+        h = h + "<li>" + prod_array[i] + "</li>";
     }
     h = h + " </ul>";
     document.getElementById("result").innerHTML = h;
 }
 
-// F12 tikrina konkrecios funkcijos teisinguma - uzejus ant funkcijos ir paspaudus, parodo, yra tokia pati identiska, ar jos skiriasi. rodo klaida
 
 
-// Sitos funkcijos uzduotis - generuoti klaidos radima.
-// be jos neveiks auksciau esanti funkcija (rasta_dublikatu = checkForDuplicates(newProduct, product_array);)
-function checkForDuplicates(newProduct, product_array) {
+function checkForDuplicates(newProd, prod_array) {
     let found = false;
 
-    //  sita funkcija pereina per visa musu turima masyva - patikrinimui. esdme _ perziura NUO - IKI. tam sukuriama 
-    for (let i = 0; i < product_array.length; i++) {
-        if (product_array[i] == newProduct) {
+    for (let i = 0; i < prod_array.length; i++) {
+        if (prod_array[i] == newProd) {
             found = true;
         }
     }
-    return found;
+    let prod_array = prod_array_stored;
+    if (prod_array_stored != null) {
+
+    }
+
+    prod_array.push(prod);
+
+
+
+    let prod_list_string = localStorage.getElementById("prod_array");
+
+    document.getElementById("result").innerText = prod_as_string;
+
+    let prod_array_string = localStorage.getItem("prod_array");
+
+    let atgautas_prod_array_stored = JSON.parse(prod_array);
+
+
+    let prod_json = JSON.stringify(prod);
+
+    let prod_array_string = JSON.stringify(prod_array);
+
+
+    localStorage.setItem("prod_array", prod_array_string);
+
+    console.log(prod_json);
+
 }

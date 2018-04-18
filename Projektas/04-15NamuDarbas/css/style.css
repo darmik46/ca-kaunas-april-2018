@@ -1,7 +1,7 @@
- body {
-     display: block;
-     display: block;
- }
+body{
+    background: url(../img/fonas.png) 0 center;  
+    display: ruby-base-container;  
+}
 
 .header {
     background: gray;
@@ -10,7 +10,8 @@
 
 
 #main {
-    background: url(../img/fonas.png) 0 center;
+    padding: top;
+    position: relative;
     min-height: 350px;
 }
 
@@ -44,8 +45,5 @@ display: block;
 
 .content {
     background: gray;
-    height: 150px;
     text-align: justify;
-    min-width: 960px;
-    position: justify;
     }

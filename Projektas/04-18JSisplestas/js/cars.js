@@ -52,7 +52,7 @@ function reg() {
     }
 
 
-    CARS.push(car);
+    // CARS.push(car);
     // cia nereikejo kabuciu! skliaustuose
     console.log(CARS);
 
@@ -77,9 +77,9 @@ function reg() {
     // localStorage.getItem("newcar", car_json);
 }
 
-function say_hi(car){
-    console.log(c.brand + " " + c.model + "Automobilis sako labas")
-}
+// function say_hi(car){
+//     console.log(c.brand + " " + c.model + "Automobilis sako labas")
+// }
 
 
 

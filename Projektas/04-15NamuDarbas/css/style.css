@@ -1,49 +1,131 @@
 body{
     background: url(../img/fonas.png) 0 center;  
-    display: ruby-base-container;  
+}
+ #header{
+    background:darkblue;
+     padding: 5px;
+    position: relative;
 }
 
-.header {
-    background: gray;
-    min-height: 100px;
-}
-
-
-#main {
+#main{
+    padding-top: 5px;
     padding: top;
     position: relative;
-    min-height: 350px;
+    min-height: 400px;
 }
 
-.gray {
-    background: gray;
-   height: 100px;
+#footer{
+    padding-top: 5px;
+    padding: top;
+    position: relative;
+    min-height: 150px;
+    margin-top: 10px;
+}
+
+#cv_laukas, #cv {
+    padding: 15px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#cv_laukas {
+    padding: 0;
+    display: none;
+}
+
+#savybes_txt, #savybes {
+    padding: 15px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#savybes_txt {
+    padding: 0;
+    display: none;
+}
+
+
+#lygiuoti {
+    background:darkblue;
+    border: moccasin;
+    border-style: groove;
+    height: 120px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+#lygiuoti1 {
+    border: moccasin;
+    border-style: groove;
+    padding: 5px;
+    text-align: center;
+    margin-left: 0;
+    }
+
+#buttons {
+    background:darkblue;
+    border: moccasin;
+    border-style: groove;
+    height: 120px;
+    padding: 5px;
+    text-align: center;
+}
+
+.txt {
+    text-align: center;
+font-family: 'Lobster',cursive;
+font: 20px;
+color: moccasin;
+}
+
+.txt_1{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font: 8px;
+    color: black;
+}
+
+.welcom{
+    text-align: center;
+    font-family: 'Lobster',cursive;
+    font-size: 40px;
+    color:moccasin;
 }
 
 .row {
-background-color: dimgray;
-    margin-top: 10px;
-display: block;
-}
-
-.footer {
-    background: azure;
-    min-height: 200px;
-
+    margin-top: 5px;
 }
 
 .photo {
-    height: 80px;
+    height: 50px;
     position: left;
-    margin: 10px;
+    margin: 2px;
 }
 
-.btn-group {
-    margin:10px; 
-    position: right;
+.photo1 {
+    height: 175px;
+    margin: 2px;
+float: right;
+    border-radius: 50%;   
 }
 
-.content {
-    background: gray;
-    text-align: justify;
-    }
+.photo2 {
+    width: 180px;
+    margin: 2px;
+float: center;
+border-radius: 50%;
+}
+
+.col2 {
+    min-width: 150px;
+    min-height: 150px;
+}
+
+.col3 {
+    min-width: 200px;
+    min-height: 200px;
+    float: none;
+    text-align: center;
+}

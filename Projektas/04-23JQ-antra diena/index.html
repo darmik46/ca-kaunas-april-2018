@@ -1,0 +1,179 @@
+<!-- ppasidomet HTML elementais is Input Type. cia susije dalykai. cia kaip pvz - https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_number-->
+<!-- html validacija veikia tik tuomet, jei formoje mes naudojame SUBMIT, o ne konkretu id= -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <section id="firstSection">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-6 lentele ">
+                    <!-- <div class="col-4"> -->
+                    <form id="myForm">
+                        <h1>Produktų registracija</h1>
+                        <div class="form-group">
+                            <label for="pavadinimas">Pavadinimas</label>
+                            <div class="input-group">
+                                <input type="text" name="pavadinimas" id="pavadinimas" class="form-control is-invalid" placeholder="Pavadinimas" required>
+                                <div class="invalid-feedback" id="pavadinimas-validation-error">
+                                    Įrašykite taisyklingai!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="kaina">Kaina</label>
+                            <div class="input-group">
+                                <input type="text" name="kaina" id="kaina" class="form-control is-invalid" placeholder="Kaina" required>
+
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon1">€</span>
+                                </div>
+                                <div class="invalid-feedback" id="kaina-validation-error">
+                                    Parašykite taisyklingai!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="kiekis">Kiekis</label>
+                            <input type="text" name="kiekis" id="kiekis" class="form-control is-invalid" placeholder="Kiekis">
+                            <div class="invalid-feedback" id="kiekis-validation-error">
+                                Įrašykite taisyklingai!
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="miestas">Miestas</label>
+                            <input type="text" name="miestas" id="miestas" class="form-control is-invalid" placeholder="Miestas" required>
+                            <div class="invalid-feedback" id="city-validation-error">
+                                Parašykite taisyklingai!
+                            </div>
+                        </div>
+
+
+                        <div class="mygtukai">
+                            <!-- butina naudoti "type" submitt, nes button yra labiau apibreztinis formos komponavimui. o submittt apima platesnes prasmes -->
+                            <button class="btn btn-success" id="sukurti" onclick="add()" type="submitt">Sukurti
+                                <i class="far fa-check-circle"></i>
+                            </button>
+                            <button class="btn btn-alert" id="sukurti" onclick="clearSavedData()" type="submitt">Clear saved data
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                            <button class="btn btn-link float-right" onclick="resetForm()">Atšaukti</button>
+                        </div>
+                    </form>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="secondSection">
+        <div class="container lentele2">
+            <div id="spausdinti"></div>
+        </div>
+    </section>
+
+<section>
+
+    
+</section>
+
+    <section id="main">
+        <div class="container ">
+            <!-- 1/2 width -->
+            <div class="row">
+                <div class="col-12 col-md-3 offset-md-1">
+                    <div class="content">
+                        <form action="/action_page.php">
+                            Quantity (between 1 and 10):
+                            <input type="number" name="quantity" min="1" max="10">
+                            <input type="submit">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 offset-md-1">
+                    <div class="content">
+                        <div>
+                            1 eur yra lygu
+                            <span id="eur_1"></span>
+                            <span id="currency_name"></span>
+                        </div>
+                        <div class="form-group">
+                            <input id="eurai" class="form-control" placeholder="Eurai">
+                        </div>
+                        <div class="form-group">
+                            <select class="select-field" id="valiuta" name="valiuta">
+                                <option value="EUR">Eurai</option>
+                                <option value="RUB">Rubliai</option>
+                                <option value="DKK">Kronos</option>
+                                <option value="USD">Dolleris</option>
+                                <option value="PLN">Zlotas</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button id="convert">Convert</button>
+                        </div>
+                        <div class="form-group">
+                            <span id="result"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="tarpelis"></div>
+
+
+            <!-- 1/2 width -->
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="content ">
+                        <button type="button" class="btn btn-primary btn-lg specialBtn">Btn1</button>
+                        <div class="result ">
+                            <input type="text" id="txt_1" class="form-control txt_field">
+                            <select id="car_select">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button id="btn_getValue_1" class="btn btn-lg">GetValue 1</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -7,6 +7,10 @@ body{
     position: relative;
 }
 
+#header2{
+     padding-top: 5px;
+    position: relative;
+}
 #main{
     padding-top: 5px;
     padding: top;
@@ -49,8 +53,6 @@ body{
 
 #lygiuoti {
     background:darkblue;
-    border: moccasin;
-    border-style: groove;
     height: 120px;
     padding-top: 5px;
     text-align: center;
@@ -66,8 +68,6 @@ body{
 
 #buttons {
     background:darkblue;
-    border: moccasin;
-    border-style: groove;
     height: 120px;
     padding: 5px;
     text-align: center;

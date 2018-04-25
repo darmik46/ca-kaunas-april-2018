@@ -1,68 +1,72 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Cars filtered</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Marvel:400i" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Filter cars</title>
+    
+	<!-- Latest compiled JavaScript -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous" >
+	
+	
+	
 
+
+	<link rel="stylesheet" href="css/style.css"/>
+	
+	<style>
+		
+	</style>
 </head>
 
 <body>
-    <header>
-        <h2>Auto paieškos forma</h2>
-    </header>
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-8">
-                    <div id="app">
-                        <div id="filteredCars">
-                            <form class="form-inline">
-                                <div class="form-group">
-                                    <label for="brandSelect">Brand:</label>
-                                    <select id="brandSelect" name="brand" class="form-control">
-                                        <option value="audi">Audi</option>
-                                        <option value="bmw">Bmw</option>
-                                        <option value="citroen">Citroen</option>
-                                        <option value="VW">VW</option>
-                                        <option value="Fiat">Fiat</option>
-                                        <option value="Lada">Lada</option>
-                                        <option value="Mazda">Mazda</option>
-                                        <option value="Skoda">Skoda</option>
-                                    </select>
-                                </div>
-                                <button type="button" id="btn_filter" class="btn btn-default">Filter</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-4">
-                    <div>
-                        <h3>Mažiausiai pravažiavęs automobilis</h3>
-                    </div>
-                    <div id="newest">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<header>
+	<h1>Filter cars demo</h1>
+</header>
+<main>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8">
+				<div id="app">
+					<form class="form-inline">
+					  
+					  <div class="form-group">
+						<label for="brandSelect">Brand:</label>
+						
+						<select id="brandSelect" name="brand" class="form-control">
+						  <option value="audi">Audi</option>
+						  <option value="bmw">Bmw</option>
+						  <option value="citroen">Citroen</option>
+						  <option value="VW">VW</option>
+						  <option value="Fiat">Fiat</option>
+						  <option value="Lada">Lada</option>
+						  <option value="Mazda">Mazda</option>
+						  <option value="Skoda">Skoda</option>
+						</select>
+						
+					  </div>
+					  <button type="button" id="btn_filter" class="btn btn-default">Filter</button>
+					  
+					</form>
+				</div>
+				<div id="result">
+					Result
+				  </div>
+			</div>
+			<div class="col-sm-4">
+				<h2>maziausiai pravaziavusi masina:</h2>
+				<div id="newest">
+					Newest
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</main>
+	
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
     <script src="js/CARS.js"></script>
     <script src="js/script.js"></script>

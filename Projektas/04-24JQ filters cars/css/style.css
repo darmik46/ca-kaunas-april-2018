@@ -8,30 +8,38 @@ body{
 
 header{
     background: url("../img/cars_wallpaper_1.png");
-    color: #fff;
+    /* color: #fff; */
     padding-top: 30px;
     padding-bottom: 30px;
  }
 
-#MyApp{
-    background: #fff;
-    border:1px solid goldenrod;
-    padding:15px;
+ main{
+     padding-top: 50px;
+ }
+
+ #app{
+     background:#fff;
+ }
+
+ #btn_filter{
+     margin-left: 15px;
+ }
+
+ #markeSelect{
+     margin-left: 15px;
+ }
+
+ .brandImg img{
+max-width: 200px;
+ }
+
+.car_table{
+   
 }
 
-#AppWrap{
-
-}
-
-.car{
-    margin-top:10px;
-    margin-bottom:10px;
-}
-
-.img-wrap{
-    width:300px;
-}
-
-.img-wrap img{
-    width:100%;
+.separator{
+    height: 1px;
+    background: #ddd;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }

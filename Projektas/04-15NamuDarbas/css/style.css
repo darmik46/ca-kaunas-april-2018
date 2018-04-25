@@ -1,8 +1,8 @@
 body{
     background: url(../img/fonas.png) 0 center;  
 }
- #header{
-    background:darkblue;
+ header{
+    background: url(../img/cars_wallpaper_1.png) 0 center;
      padding: 5px;
     position: relative;
 }
@@ -11,14 +11,14 @@ body{
      padding-top: 5px;
     position: relative;
 }
-#main{
+main{
     padding-top: 5px;
     padding: top;
     position: relative;
     min-height: 400px;
 }
 
-#footer{
+footer{
     padding-top: 5px;
     padding: top;
     position: relative;

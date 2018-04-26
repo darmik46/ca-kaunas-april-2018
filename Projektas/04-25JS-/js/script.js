@@ -1,71 +1,3 @@
-$("#btn_search").click(function () {
-    alert("veikia");
-
-    let brand_text = $("txt_brand").val();
-    // alert(brand_text);
-
-    let filtered_cars = CARS.filter(function (car) {
-        let ful_string = car.brand.toLowerCase() + " " + car.model.toLowerCase();
-
-        let part_of_string = brand_text.toLowerCase() + " " + model_text.toLowerCase();
-        
-        return ful_string.indexOf(part_of_string) > -1;
-    });
-
-    let powerCar = getMostPowerfulCar(filtered_cars);
-    printCar(powerCar);
-    // printCar(filtered_cars);
-});
-
-function printCar(filtered_cars) {
-
-    let h = "";
-    for (let i = 0; i < filtered_cars.length; i++) {
-        h = h + "<div class='row'>";
-        h = h + "<div class='col-12'>";
-        h = h + "<h5>" + filtered_cars[i].brand + "-" + filtered_cars[i].model + "</h5>";
-        h = h + "<div class='brandImg'><img src='img/" + filtered_cars[i].brand.toLowerCase() + ".png' /></div>";
-        h = h + "<table class='car_table'>";
-        h = h + "<tr><th>Seats:</th><td>" + filtered_cars[i].seats + "</td></tr>";
-        h = h + "<tr><th>HP:</th><td>" + filtered_cars[i].power + "</td></tr>";
-        h = h + "<tr><th>Mileage:</th><td>" + filtered_cars[i].mileage + "</td></tr>";
-        h = h + "<tr><th>Date:</th><td>" + filtered_cars[i].date + "</td></tr>";
-        h = h + "</table>";
-        h = h + "<hr>";
-        h = h + "</div>";
-        h = h + "</div>";
-    }
-
-    $("#result").html(h);
-}
-
-function getMostPowerFulCar(array) {
-    let powerful_car = array[0];
-    for (let i = 0; i < array.length; i++) {
-        if (array[i].powerful_car < powerful_car.power) {
-        }
-    }
-    return powerful_car;
-}
-
-function printCar(car) {
-    let h = "";
-    h = h + "<div class='row'>";
-    h = h + "<div class='col-12'>";
-    h = h + "<h5>" + car.brand + " " + car.model + "</h5>";
-    h = h + "<div class='brandImg'><img src='img/" + car.brand.toLowerCase() + ".png' /></div>";
-    h = h + "<table class='car_table'>";
-    h = h + "<tr><th>Seats:</th><td>" + car.seats + "</td></tr>";
-    h = h + "<tr><th>HP:</th><td>" + car.power + "</td></tr>";
-    h = h + "<tr><th>Mileage:</th><td>" + car.mileage + "</td></tr>";
-    h = h + "<tr><th>Date:</th><td>" + car.date + "</td></tr>";
-    h = h + "</table>";
-    h = h + "<hr>";
-    h = h + "</div>"; // uzdarom col-12
-    h = h + "</div>"; // uzdarom row	
-
-    $("#topCar").html(h);
-}
 
 
 
@@ -88,89 +20,100 @@ function printCar(car) {
 
 
 
+// $("#btn_search").click(function () {
+//     alert("veikia");
+
+//     let brand_text = $("txt_brand").val();
+//     let model_text = $("txt_model").val();
+
+//     let hp_from_text = $("#txt_hp_from").val();
+//     let hp_to_text = $("#txt_hp_to").val();
+
+//     let date_from_text = $("#txt_date_from").val();
+//     let date_to_text = $("#txt_date_to").val();
 
 
+//     let filtered_cars = CARS.filter(function (car) {
+//         let full_string = car.brand.toLowerCase() + " " + car.model.toLowerCase();
+//         let part_of_string = brand_text.toLowerCase() + " " + model_text.toLowerCase();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//     let brand_text = $("#brandSelect").val();
-
-//     let filteredCars = CARS.filter(function (car) {
-
-//         return car.brand.toLowerCase() == brand_text.toLowerCase();
+//         return full_string.indexOf(part_of_string) > -1;
 //     });
 
-//     // let topCar = getTopCar(filteredCars);
 
-//     // printCars(filteredCars);
+//     let hp_min = 0;
+//     let hp_max = 99999;
 
-//     // printTopCar(topCar);
+//     if (hp_from_text){
+//         hp_min = Number(hp_from_text);
+//     }
+
+//     if (hp_to_text){
+//         hp_max = Number(hp_to_text);
+//     }
+
+//     let cars_filtered_by_hp = filtered_cars.filter(function (car) {
+//         return car.power >= hp_min && car.power <= hp_max;
+//     });
+
+
+//     let date_from = new Date(0);
+//     let date_until = new Date(2200, 0, 1);
+
+//     if (date_from_text) {
+//         date_from = new Date(date_from_text);
+//     }
+
+
+//     if (date_to_text) {
+//         date_until = new Date(date_to_text);
+//     }
+
+// let cars_filtered_by_date=cars_filtered_by_hp(function(car){
+//     let car_date=new Date(car.date);
+//     return car_date>=date_from&&car_date<=date_until;
 // });
 
+//     let powerCar = getMostPowerfulCar(cars_filtered_by_date);
+//     printCar(powerCar);
+//     printCars(cars_filtered_by_date);
+// });
 
+// function printCars(filtered_cars) {
 
-// function click(){
-// 	//Input
-// 	let brand_input = document.getElementById("brand").value;
-// 	let date_input = document.getElementById("date").value;
-// 	let mileage_input = document.getElementById("mileage").value;
-// 	let power_input = document.getElementById("power").value;
+//     let h = "";
+//     for (let i = 0; i < filtered_cars.length; i++) {
+//         h = h + "<div class='row'>";
+//         h = h + "<div class='col-12'>";
+//         h = h + "<h5>" + filtered_cars[i].brand + "-" + filtered_cars[i].model + "</h5>";
+//         h = h + "<div class='brandImg'><img src='img/" + filtered_cars[i].brand.toLowerCase() + ".png' /></div>";
+//         h = h + "<table class='car_table'>";
+//         h = h + "<tr><th>Seats:</th><td>" + filtered_cars[i].seats + "</td></tr>";
+//         h = h + "<tr><th>HP:</th><td>" + filtered_cars[i].power + "</td></tr>";
+//         h = h + "<tr><th>Mileage:</th><td>" + filtered_cars[i].mileage + "</td></tr>";
+//         h = h + "<tr><th>Date:</th><td>" + filtered_cars[i].date + "</td></tr>";
+//         h = h + "</table>";
+//         h = h + "<hr>";
+//         h = h + "</div>";
+//         h = h + "</div>";
+//     }
 
-// 	//Logic
-// 	let cars = {
-// 		brand: brand_input,
-// 		date: Number(date_input),
-// 		mileage: Number(mileage_input),
-// 		power: power_input
-// 	}
-// 	cars.push(car);
-// 	console.log(cars);
-
-
-
-// function printCars(array){
-// 	let h = "";
-// 	for(let i = 0; i<array.length;i++){
-// 		h = h + "<div class='row'>";
-// 		h = h + "<div class='col-12'>";
-// 		h = h + "<h5>"+array[i].brand+" "+array[i].model+"</h5>";
-// 		h = h + "<div class='brandImg'><img src='img/" + array[i].brand.toLowerCase() + ".png' /></div>";
-// 		h = h + "<table class='car_table'>";
-// 		h = h + "<tr><th>Seats:</th><td>"+array[i].seats+"</td></tr>";
-// 		h = h + "<tr><th>HP:</th><td>"+array[i].power+"</td></tr>";
-// 		h = h + "<tr><th>Mileage:</th><td>"+array[i].mileage+"</td></tr>";
-// 		h = h + "<tr><th>Date:</th><td>"+array[i].date+"</td></tr>";
-// 		h = h +"</table>";
-
-// 		h = h +"<hr>";
-
-// 		h = h + "</div>";
-// 		h = h + "</div>";
-// 	}
-// 	$("#result").html(h);
+//     $("#result").html(h);
 // }
 
 
-// function printTopCar(car) {
+// function getMostPowerFulCar(array) {
+//     let powerful_car = array[0];
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i].power < powerful_car.power) {
+//         }
+//     }
+//     return powerful_car;
+// }
+
+
+// function printCar(car) {
 //     let h = "";
-//     // arba galima rasyti taip:
-//     // let car = array[i];
 //     h = h + "<div class='row'>";
 //     h = h + "<div class='col-12'>";
 //     h = h + "<h5>" + car.brand + " " + car.model + "</h5>";
@@ -181,32 +124,140 @@ function printCar(car) {
 //     h = h + "<tr><th>Mileage:</th><td>" + car.mileage + "</td></tr>";
 //     h = h + "<tr><th>Date:</th><td>" + car.date + "</td></tr>";
 //     h = h + "</table>";
-
 //     h = h + "<hr>";
+//     h = h + "</div>"; // uzdarom col-12
+//     h = h + "</div>"; // uzdarom row	
 
-//     h = h + "</div>";
-//     h = h + "</div>";
-
-// // sita funcija musu rasta duomeni nuveda i matymo lauka
-//     $("#newest").html(h);
+//     $("#topCar").html(h);
 // }
 
 
-// function getTopCar(array) {
-//     let topCar = array[0];
-//     for (let i = 0; i < array.length; i++) {
-//         if (array[i].brand < topCar.brand) {
-//             topCar = array[i];
-//         }
-//     }
 
-//     let topCar = getTopCar(filteredCars);
 
-//     printCars(filteredCars);
+$("#btn_search").click(function () {
 
-//     printTopCar(topCar);
+	// input - nuskaityti reiksmes nuo laukeliu
+	let brand_text = $("#txt_brand").val();
+	let model_text = $("#txt_model").val();
 
-// }
+	let hp_from_text = $("#txt_hp_from").val();
+	let hp_to_text = $("#txt_hp_to").val();
 
-//   return topCar;
-// }
+	let date_from_text = $("#txt_date_from").val();
+	let date_to_text = $("#txt_date_to").val();
+
+	// logic - atfiltruoti reikiamus duomenys
+	let filtered_cars = CARS.filter(function (car) {
+		let full_string = car.brand.toLowerCase() + " " + car.model.toLowerCase();
+		let part_of_string = brand_text.toLowerCase() + " " + model_text.toLowerCase();
+
+		return full_string.indexOf(part_of_string) > -1; // paliginimo funkcija - Filtruojam pagal branda
+	});
+
+	let hp_min = 0;
+	let hp_max = 99999;
+
+	if(hp_from_text){
+		hp_min = Number(hp_from_text);
+	}
+
+	if(hp_to_text){
+		hp_max = Number(hp_to_text);
+	}
+	
+	// papildomai atfiltruot
+	let cars_filtered_by_hp = filtered_cars.filter(function (car) {	
+		//console.log(hp_min + " " + hp_max);	
+		return car.power >= hp_min && car.power <= hp_max; // paliginimo funkcija - Filtruojam pagal branda
+	});
+
+
+	let date_from = new Date(0);
+	let date_until = new Date(2200,0,1);
+
+	if(date_from_text){
+		date_from = new Date(date_from_text);
+		//console.log(date_from);
+	}
+
+	if(date_to_text){
+		date_until = new Date(date_to_text);
+		//console.log(date_until);
+	}
+
+	let cars_filtered_by_date = cars_filtered_by_hp.filter(function (car) {	
+		let car_date = new Date(car.date);			
+		return car_date >= date_from && car_date <= date_until;
+	});
+
+	// rasti galingiausiamasina
+	let powerCar = getMostPowerfulCar(cars_filtered_by_date);
+	printCar(powerCar);
+
+	// output - atvaizduoti atrilftruotus duomenys
+	printCars(cars_filtered_by_date);
+});
+
+//funkcija sarasui atvaizduoti
+function printCars(filtered_cars){
+	let h = "";
+
+	for(let i = 0; i < filtered_cars.length; i++){
+		
+		h = h + "<div class='row'>";
+		h = h + "<div class='col-12'>";
+		h = h + "<h5>"+filtered_cars[i].brand+" "+filtered_cars[i].model+"</h5>";
+		h = h + "<div class='brandImg'><img src='img/" + filtered_cars[i].brand.toLowerCase() + ".png' /></div>";
+		h = h + "<table class='car_table'>";
+		h = h + "<tr><th>Seats:</th><td>"+filtered_cars[i].seats+"</td></tr>";
+		h = h + "<tr><th>HP:</th><td>"+filtered_cars[i].power+"</td></tr>";
+		h = h + "<tr><th>Mileage:</th><td>"+filtered_cars[i].mileage+"</td></tr>";
+		h = h + "<tr><th>Date:</th><td>"+filtered_cars[i].date+"</td></tr>";
+		h = h +"</table>";
+
+		h = h +"<hr>";
+		
+		h = h + "</div>"; // uzdarom col-12
+		h = h + "</div>"; // uzdarom row
+	}
+
+	$("#result").html(h);
+}
+
+//next function
+function getMostPowerfulCar(array){
+	let powerful_car = array[0];
+
+	for(let i = 0; i < array.length; i++){
+		if(array[i].power > powerful_car.power){
+			powerful_car = array[i];
+		}
+	}
+	
+	return powerful_car;
+}
+
+//next function
+function printCar(car){
+	let h = "";
+		
+		h = h + "<div class='row'>";
+		h = h + "<div class='col-12'>";
+		h = h + "<h5>"+car.brand+" "+car.model+"</h5>";
+		h = h + "<div class='brandImg'><img src='img/" + car.brand.toLowerCase() + ".png' /></div>";
+		h = h + "<table class='car_table'>";
+		h = h + "<tr><th>Seats:</th><td>"+car.seats+"</td></tr>";
+		h = h + "<tr><th>HP:</th><td>"+car.power+"</td></tr>";
+		h = h + "<tr><th>Mileage:</th><td>"+car.mileage+"</td></tr>";
+		h = h + "<tr><th>Date:</th><td>"+car.date+"</td></tr>";
+		h = h +"</table>";
+
+		h = h +"<hr>";
+		
+		h = h + "</div>"; // uzdarom col-12
+		h = h + "</div>"; // uzdarom row	
+
+	$("#topCar").html(h);
+}
+
+//next function...

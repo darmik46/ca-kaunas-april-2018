@@ -1,16 +1,14 @@
 body{
     background: url(../img/fonas.png) 0 center;  
 }
+
  header{
-    background: url(../img/cars_wallpaper_1.png) 0 center;
+    background: rgb(231, 109, 64);
      padding: 5px;
-    position: relative;
+    /* position: relative; */
 }
 
-#header2{
-     padding-top: 5px;
-    position: relative;
-}
+
 main{
     padding-top: 5px;
     padding: top;
@@ -52,7 +50,6 @@ footer{
 
 
 #lygiuoti {
-    background:darkblue;
     height: 120px;
     padding-top: 5px;
     text-align: center;
@@ -67,7 +64,6 @@ footer{
     }
 
 #buttons {
-    background:darkblue;
     height: 120px;
     padding: 5px;
     text-align: center;

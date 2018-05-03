@@ -1,0 +1,31 @@
+body{
+    background: #f5f8fa;
+    margin: 60px;
+}
+
+.text{
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.cont{
+    min-width: 110px; 
+    margin-left: 20px;
+}
+
+.cont_field{
+    min-width: 230px;
+    /* margin-left: 10px; */
+}
+
+.button{
+  margin: 0
+}
+
+.new_text{
+margin: 20px;
+}
+
+#result_table{
+    
+}

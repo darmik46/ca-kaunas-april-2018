@@ -1,0 +1,135 @@
+header{
+    background: bisque;
+    min-height: 200px;
+   float: inherit;
+}
+/*.container {*/
+    /*align-content: center;*/
+/*}*/
+main{
+background: #fdb913;
+    min-height: 300px;
+    float: inherit;
+}
+
+
+table, table td{
+    border: 3px solid black;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+}
+
+table tr:first-child td:last-child {
+    background: moccasin;
+}
+
+.photo{
+    margin: 10px 0 10px 30px;
+background: darkgray;
+    width: 300px;
+    min-height: 200px;
+}
+
+
+.square {
+    background: #fdb913;
+    height: 100px;
+    width:100%;
+    margin-left: 20px;
+}
+
+.square1 {
+    background:#006A44;
+    height: 100px;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.square2 {
+    background: #c1272d;
+    height: 100px;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.boldText, .p1{
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.olympic-logo{
+   min-height: 38em;
+    min-width: 17.5em;
+    font-size: 20px;
+    position: absolute;
+}
+
+.ring{
+    height: 10em;
+    width: 10em;
+    border: 1em solid;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.ring1{
+    border-color: blue;
+}
+.ring2{
+       border-color: black;
+    left: 13em;
+.ring3{
+    border-color: red;
+    left:26em;
+}
+.ring4{
+    border-color: yellow;
+    top: 5.5em;
+    left:6.5em;
+}
+.ring5{
+    border-color: green;
+    top:5.5em;
+    left: 19.5em;
+}
+
+.patch{
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    overflowv: hidden;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5em 0 5em 10em;
+}
+
+.patch:before{
+    content:"";
+    width: 10em;
+    height: 10em;
+    position: absolute;
+    top: -5em;
+    left:-10em;
+    border:1em solid;
+   border-radius: 50%;
+}
+.patch1:before{
+        border-color: #007ac9;
+}
+
+.patch2{
+    left:13em;
+}
+patch3{
+    left:13em;
+    transform: rotate(100deg);
+}
+.patch4{
+    left: 26em;
+    transform:rotate(100deg);
+}
+.patch4:before{
+    border-color: green;
+}
